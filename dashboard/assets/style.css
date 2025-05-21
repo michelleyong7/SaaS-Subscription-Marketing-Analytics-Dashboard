@@ -1,0 +1,96 @@
+/* General Body Style */
+body {
+    color: #333;
+    background-color: #f0f2f6; /* Light grey background */
+}
+
+/* Main Dashboard Area */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Titles and Headers */
+h1, h2, h3 {
+    color: #2c3e50; /* Dark blue-grey for titles */
+}
+
+st.header, st.subheader {
+    color: #2c3e50;
+}
+
+/* Sidebar Styling */
+.stSidebar {
+    background-color: #2E3B4E; /* Darker sidebar background */
+}
+
+/* Ensure all direct children text containers in sidebar get white text */
+.stSidebar div[data-testid="stMarkdownContainer"] p,
+.stSidebar div[data-testid="stMarkdownContainer"] li,
+.stSidebar div[data-testid="stMarkdownContainer"] label,
+.stSidebar .st-emotion-cache-16txtl3.e1f1d6gn0 label, /* Date input label */
+.stSidebar .st-ae,
+.stSidebar h2, /* For 'Global Filters', 'Dashboard Sections' */
+.stSidebar h3 {
+    color: #FFFFFF !important; /* White text in sidebar, !important to override specifics */
+}
+
+/* Date input field text color */
+.stSidebar div[data-testid="stDateInput"] input {
+    color: #000000 !important; /* Black text for the date value in the input field */
+}
+
+.stSidebar .stRadio > label {
+    color: #FFFFFF !important; /* White text for radio button labels in sidebar */
+}
+
+.stSidebar .stRadio div[data-testid="stMarkdownContainer"] p {
+    color: #FFFFFF !important; /* Ensure radio option text is white */
+}
+
+.stSidebar .st-emotion-cache-ue6h4r {
+    color: #FFFFFF !important; /* For the "Dashboard for SaaS..." text */
+}
+
+/* Metric Cards (Example - you might need to inspect element to get the exact class for st.metric) */
+.stMetric {
+    background-color: #ffffff;
+    border-left: 5px solid #1abc9c; /* Teal accent line */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stMetric > label {
+    color: #7f8c8d; /* Muted color for metric label */
+}
+
+.stMetric > div[data-testid="stMetricValue"] {
+    color: #2c3e50; /* Dark blue-grey for metric value */
+}
+
+/* Button Styling (Example) */
+.stButton>button {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.stButton>button:hover {
+    background-color: #2980b9;
+}
+
+/* Dataframe/Table Styling */
+.stDataFrame table {
+    color: #333;
+}
+
+.stDataFrame thead th {
+    background-color: #e1e1e1;
+    color: #2c3e50;
+}
+
+/* Add more specific styles as needed */ 
