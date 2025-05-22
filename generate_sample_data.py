@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import os
 
 DB_DIR = "data/sqlite"
-DB_NAME = "saas_subscriptions.db"
+DB_NAME = "saas.db"
 DB_PATH = os.path.join(DB_DIR, DB_NAME)
 
 NUM_CUSTOMERS = 200

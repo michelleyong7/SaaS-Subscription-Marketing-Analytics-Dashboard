@@ -5,7 +5,7 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import os
 
-DB_PATH = 'data/sqlite/saas_subscriptions.db'
+DB_PATH = 'data/sqlite/saas.db'
 
 def load_css(file_name):
     with open(file_name) as f:
